@@ -6,6 +6,11 @@
 #
 # Dependencias: curl, jq
 
+# Variables de entorno para cron
+if [ -f "$HOME/.cron_env" ]; then
+    . "$HOME/.cron_env"
+fi
+
 # --- Configuración IONOS API ---
 if [[ -z "${IONOS_API_KEY}" ]]; then
   echo "❌ Error: La variable de entorno IONOS_API_KEY no está definida."
