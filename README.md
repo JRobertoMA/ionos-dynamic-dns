@@ -35,7 +35,7 @@ Sigue estos pasos para configurar el script correctamente.
 El script necesita una clave de API para autenticarse con IONOS.
 
 1.  Genera tu clave en el panel de IONOS: **Menú > Servidores & Cloud > API**.
-2.  Guarda la clave de forma segura como una variable de entorno. Añade la siguiente línea a tu archivo de perfil de shell (`~/.bashrc` o `~/.zshrc`):
+2.  Guarda la clave de forma segura como una variable de entorno. Añade la siguiente línea a tu archivo de perfil de shell (`~/.bashrc`, `~/.zshrc` o crea un archivo especifico para cron `~/.cron_env`):
 
     ```bash
     export IONOS_API_KEY="tu.clave.publica.tu_clave_secreta"
@@ -56,7 +56,7 @@ Para recibir notificaciones, necesitas un bot de Telegram y tu ID de chat.
     - Ahora, habla con `@userinfobot` y te mostrará tu **ID de chat**.
 
 3.  **Configurar las Variables de Entorno**:
-    - Añade las siguientes líneas a tu `~/.bashrc` o `~/.zshrc`:
+    - Añade las siguientes líneas a tu `~/.bashrc`, `~/.zshrc` o `~/.cron_env`:
 
     ```bash
     export TELEGRAM_BOT_TOKEN="el_token_de_tu_bot"
